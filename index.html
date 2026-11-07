@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=900">
+<title>مرور فصل ۱ و ۲ ریاضی — نسخه ۳ دسکتاپ</title>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fff8ec;--ink:#2b2a33;--card:#fff;--c1:#ff7a59;--c2:#2f80ed;--c3:#27ae60;--c4:#9b51e0;--c5:#f2b01e;--soft:#f6efe0}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Vazirmatn,Tahoma,sans-serif;line-height:2.15;font-size:1.02rem}
+header{background:linear-gradient(135deg,#2f80ed,#9b51e0);color:#fff;text-align:center;padding:34px 16px 54px;border-radius:0 0 40px 40px}
+header h1{margin:0;font-size:1.9rem;font-weight:800}
+header p{margin:6px auto 0;max-width:560px;opacity:.95}
+nav{position:sticky;top:0;z-index:10;display:flex;gap:6px;overflow-x:auto;padding:8px 10px;background:#fff8ecf2;backdrop-filter:blur(6px);box-shadow:0 2px 8px #0001;margin-top:-26px}
+nav a{flex:0 0 auto;text-decoration:none;color:var(--ink);background:#fff;border:2px solid #eadfc8;border-radius:99px;padding:2px 12px;font-size:.85rem;font-weight:600}
+nav a:hover{border-color:var(--c2);color:var(--c2)}
+main{max-width:820px;margin:0 auto;padding:10px 12px 60px}
+.part{margin:34px 0 8px;text-align:center}
+.part span{display:inline-block;background:var(--ink);color:#fff;border-radius:14px;padding:4px 22px;font-weight:800;font-size:1.15rem}
+section{background:var(--card);border-radius:22px;padding:18px 18px 12px;margin:16px 0;box-shadow:0 6px 0 var(--k,#ddd),0 10px 24px #0001;border-top:8px solid var(--k,#ddd)}
+section h2{margin:0 0 4px;font-size:1.25rem;font-weight:800;color:var(--k)}
+section h2 i{font-style:normal;font-size:1.5rem;margin-inline-end:6px}
+h3{margin:14px 0 0;font-size:1.03rem;font-weight:800}
+.s1{--k:var(--c1)}.s2{--k:var(--c2)}.s3{--k:var(--c3)}.s4{--k:var(--c4)}.s5{--k:#d98e00}
+.m{direction:ltr;unicode-bidi:isolate;display:inline-block;background:var(--soft);border-radius:8px;padding:0 8px;font-weight:600;line-height:1.8}
+.box{border-radius:14px;padding:8px 14px;margin:10px 0}
+.def{background:#eaf2ff;border-right:6px solid var(--c2)}
+.ex{background:#eafaf0;border-right:6px solid var(--c3)}
+.tip{background:#fff6d9;border-right:6px solid var(--c5)}
+.bad{background:#ffe9e4;border-right:6px solid var(--c1)}
+.box b.t{display:block;font-size:.85rem;opacity:.75}
+table{border-collapse:collapse;width:100%;margin:8px 0;font-size:.95rem}
+th,td{border:1.5px solid #e6dcc6;padding:2px 8px;text-align:center}
+th{background:var(--soft)}
+.fig{text-align:center;overflow-x:auto;margin:8px 0}
+.fig svg{max-width:100%;height:auto}
+.f{display:inline-flex;flex-direction:column;vertical-align:middle;text-align:center;line-height:1.3;margin:0 3px;font-size:.9em}
+.f>span:first-child{border-bottom:1.5px solid currentColor;padding:0 3px}
+details{background:var(--soft);border-radius:12px;padding:4px 14px;margin:8px 0}
+summary{cursor:pointer;font-weight:700;color:var(--c4)}
+ul,ol{margin:4px 0;padding-inline-start:22px}
+.cal{background:var(--soft);border-radius:14px;padding:10px 14px;text-align:center}
+.cal input{width:100%;accent-color:var(--c4)}
+.cal big{font-size:1.4rem;font-weight:800;color:var(--c4)}
+footer{text-align:center;padding:20px;color:#7a7466;font-size:.9rem}
+.rd{display:inline-flex;align-items:stretch;white-space:nowrap}
+.rd>i{font-style:normal;border-top:1.6px solid currentColor;margin-top:.18em;padding:0 .12em;line-height:1.45}
+td .m{white-space:nowrap}
+.cap{font-size:.85rem;color:#6b6659;line-height:1.7}
+</style>
+</head>
+<body>
+<header>
+  <div style="font-size:2.6rem">📘</div>
+  <h1>مرور فصل ۱ و ۲ ریاضی</h1>
+  <p>مجموعه‌ها و احتمال، عددهای حقیقی. همه‌چیز از صفر و قدم‌به‌قدم، با مثال‌های ساده. اگر چیزی را نفهمیدی نگران نباش، دوباره بخوان!</p>
+</header>
+<nav>
+  <a href="#a1">مجموعه</a><a href="#a2">زیرمجموعه</a><a href="#a3">اجتماع و اشتراک</a><a href="#a4">احتمال</a>
+  <a href="#b1">دسته‌بندی اعداد</a><a href="#b2">گویا و گنگ</a><a href="#b3">رادیکال</a><a href="#b4">محور و بازه</a><a href="#b5">قدرمطلق</a><a href="#b6">عدد بین دو عدد</a><a href="#q">تمرین</a>
+</nav>
+<main>
+
+<div class="part"><span>📗 فصل ۱ — مجموعه‌ها</span></div>
+
+<section class="s1" id="a1">
+<h2><i>🧺</i>مجموعه چیست؟</h2>
+<p>مجموعه یعنی یک <b>دسته از چیزهای مشخص</b>. مثل یک سبد میوه. به هر چیزی که داخل سبد است می‌گوییم <b>عضو</b>.</p>
+<div class="box def"><b class="t">قاعده</b>
+مجموعه را با آکولاد می‌نویسیم و عضوها را با ویرگول جدا می‌کنیم:
+<span class="m">A = {1, 2, 3}</span><br>
+ترتیب مهم نیست و عضو تکراری را فقط یک بار می‌نویسیم: <span class="m">{1,2,2,3} = {3,1,2}</span></div>
+<h3>علامت‌های مهم</h3>
+<table>
+<tr><th>علامت</th><th>معنی</th><th>مثال</th></tr>
+<tr><td><span class="m">∈</span></td><td>عضو است</td><td><span class="m">2 ∈ A</span> (۲ عضو A است)</td></tr>
+<tr><td><span class="m">∉</span></td><td>عضو نیست</td><td><span class="m">5 ∉ A</span></td></tr>
+<tr><td><span class="m">∅</span></td><td>مجموعهٔ تهی (بدون عضو)</td><td>سبد خالی 🧺</td></tr>
+</table>
+<h3>سه راه نوشتن یک مجموعه</h3>
+<ol>
+<li><b>فهرستی:</b> عضوها را می‌نویسیم. <span class="m">{0, 1, 2}</span></li>
+<li><b>نمادی (ریاضی):</b> ویژگی عضوها را می‌نویسیم. <span class="m">{x | x ∈ ℤ, −1 &lt; x &lt; 3}</span> یعنی «همهٔ x ها که عدد صحیح‌اند و بین ۱- و ۳ هستند».</li>
+<li><b>نمودار ون:</b> عضوها را داخل یک منحنی بسته می‌کشیم.</li>
+</ol>
+<div class="box ex"><b class="t">مثال قدم‌به‌قدم</b>
+<span class="m">A = {x | x ∈ ℤ, −1 &lt; x &lt; 6}</span><br>
+قدم ۱: عددهای صحیح بین ۱- و ۶ را پیدا کن. چون علامت «&lt;» داریم، خود ۱- و ۶ <b>نیستند</b>.<br>
+قدم ۲: پس <span class="m">A = {0, 1, 2, 3, 4, 5}</span>.<div class="fig"><svg width="340" height="80" viewBox="0 0 340 80" style="direction:ltr;font-family:Vazirmatn,Tahoma"><line x1="8" y1="52" x2="332" y2="52" stroke="#000" stroke-width="1.4"/><path d="M332,52 l-9,-4.5 v9 z M8,52 l9,-4.5 v9 z"/><line x1="22.0" y1="47" x2="22.0" y2="57" stroke="#000"/><text x="22.0" y="74" text-anchor="middle" font-size="12">−۲</text><line x1="54.9" y1="47" x2="54.9" y2="57" stroke="#000"/><text x="54.9" y="74" text-anchor="middle" font-size="12">−۱</text><line x1="87.8" y1="47" x2="87.8" y2="57" stroke="#000"/><text x="87.8" y="74" text-anchor="middle" font-size="12">۰</text><line x1="120.7" y1="47" x2="120.7" y2="57" stroke="#000"/><text x="120.7" y="74" text-anchor="middle" font-size="12">۱</text><line x1="153.6" y1="47" x2="153.6" y2="57" stroke="#000"/><text x="153.6" y="74" text-anchor="middle" font-size="12">۲</text><line x1="186.4" y1="47" x2="186.4" y2="57" stroke="#000"/><text x="186.4" y="74" text-anchor="middle" font-size="12">۳</text><line x1="219.3" y1="47" x2="219.3" y2="57" stroke="#000"/><text x="219.3" y="74" text-anchor="middle" font-size="12">۴</text><line x1="252.2" y1="47" x2="252.2" y2="57" stroke="#000"/><text x="252.2" y="74" text-anchor="middle" font-size="12">۵</text><line x1="285.1" y1="47" x2="285.1" y2="57" stroke="#000"/><text x="285.1" y="74" text-anchor="middle" font-size="12">۶</text><line x1="318.0" y1="47" x2="318.0" y2="57" stroke="#000"/><text x="318.0" y="74" text-anchor="middle" font-size="12">۷</text><circle cx="54.9" cy="52" r="5.5" fill="#fff" stroke="#e0432c" stroke-width="2.2"/><circle cx="87.8" cy="52" r="5.5" fill="#2f80ed" stroke="#2f80ed" stroke-width="2.2"/><circle cx="120.7" cy="52" r="5.5" fill="#2f80ed" stroke="#2f80ed" stroke-width="2.2"/><circle cx="153.6" cy="52" r="5.5" fill="#2f80ed" stroke="#2f80ed" stroke-width="2.2"/><circle cx="186.4" cy="52" r="5.5" fill="#2f80ed" stroke="#2f80ed" stroke-width="2.2"/><circle cx="219.3" cy="52" r="5.5" fill="#2f80ed" stroke="#2f80ed" stroke-width="2.2"/><circle cx="252.2" cy="52" r="5.5" fill="#2f80ed" stroke="#2f80ed" stroke-width="2.2"/><circle cx="285.1" cy="52" r="5.5" fill="#fff" stroke="#e0432c" stroke-width="2.2"/></svg><div class="cap">نقطه‌های آبیِ توپر عضو A هستند. دایره‌های قرمز (−۱ و ۶) عضو نیستند.</div></div>
+مثال با فرمول: <span class="m">B = {5k+5 | k ∈ ℤ, −1 ≤ k ≤ 1}</span>. به‌جای k عددهای ۱-، ۰ و ۱ را بگذار:
+k=−1 → ۰ ، k=0 → ۵ ، k=1 → ۱۰. پس <span class="m">B = {0, 5, 10}</span>.<div class="fig"><svg width="340" height="80" viewBox="0 0 340 80" style="direction:ltr;font-family:Vazirmatn,Tahoma"><line x1="8" y1="52" x2="332" y2="52" stroke="#000" stroke-width="1.4"/><path d="M332,52 l-9,-4.5 v9 z M8,52 l9,-4.5 v9 z"/><line x1="22.0" y1="47" x2="22.0" y2="57" stroke="#000"/><text x="22.0" y="74" text-anchor="middle" font-size="12">−۱</text><line x1="46.7" y1="47" x2="46.7" y2="57" stroke="#000"/><text x="46.7" y="74" text-anchor="middle" font-size="12">۰</text><line x1="71.3" y1="47" x2="71.3" y2="57" stroke="#000"/><text x="71.3" y="74" text-anchor="middle" font-size="12">۱</text><line x1="96.0" y1="47" x2="96.0" y2="57" stroke="#000"/><text x="96.0" y="74" text-anchor="middle" font-size="12">۲</text><line x1="120.7" y1="47" x2="120.7" y2="57" stroke="#000"/><text x="120.7" y="74" text-anchor="middle" font-size="12">۳</text><line x1="145.3" y1="47" x2="145.3" y2="57" stroke="#000"/><text x="145.3" y="74" text-anchor="middle" font-size="12">۴</text><line x1="170.0" y1="47" x2="170.0" y2="57" stroke="#000"/><text x="170.0" y="74" text-anchor="middle" font-size="12">۵</text><line x1="194.7" y1="47" x2="194.7" y2="57" stroke="#000"/><text x="194.7" y="74" text-anchor="middle" font-size="12">۶</text><line x1="219.3" y1="47" x2="219.3" y2="57" stroke="#000"/><text x="219.3" y="74" text-anchor="middle" font-size="12">۷</text><line x1="244.0" y1="47" x2="244.0" y2="57" stroke="#000"/><text x="244.0" y="74" text-anchor="middle" font-size="12">۸</text><line x1="268.7" y1="47" x2="268.7" y2="57" stroke="#000"/><text x="268.7" y="74" text-anchor="middle" font-size="12">۹</text><line x1="293.3" y1="47" x2="293.3" y2="57" stroke="#000"/><text x="293.3" y="74" text-anchor="middle" font-size="12">۱۰</text><line x1="318.0" y1="47" x2="318.0" y2="57" stroke="#000"/><text x="318.0" y="74" text-anchor="middle" font-size="12">۱۱</text><circle cx="46.7" cy="52" r="5.5" fill="#2f80ed" stroke="#2f80ed" stroke-width="2.2"/><text x="46.7" y="40" text-anchor="middle" font-size="13" font-weight="700" fill="#2f80ed">k=−۱</text><circle cx="170.0" cy="52" r="5.5" fill="#2f80ed" stroke="#2f80ed" stroke-width="2.2"/><text x="170.0" y="40" text-anchor="middle" font-size="13" font-weight="700" fill="#2f80ed">k=۰</text><circle cx="293.3" cy="52" r="5.5" fill="#2f80ed" stroke="#2f80ed" stroke-width="2.2"/><text x="293.3" y="40" text-anchor="middle" font-size="13" font-weight="700" fill="#2f80ed">k=۱</text></svg><div class="cap">سه عضو B: ۰ و ۵ و ۱۰</div></div></div>
+<div class="box tip"><b class="t">یادآوری</b>
+مجموعهٔ <b>متناهی</b> عضوهایش تمام می‌شود (مثل {۱,۲,۳}). مجموعهٔ <b>نامتناهی</b> تمام نمی‌شود (مثل همهٔ عددهای طبیعی).</div>
+</section>
+
+<section class="s2" id="a2">
+<h2><i>🪆</i>زیرمجموعه</h2>
+<p>اگر <b>همهٔ</b> عضوهای مجموعهٔ A داخل مجموعهٔ B هم باشند، می‌گوییم A زیرمجموعهٔ B است و می‌نویسیم <span class="m">A ⊆ B</span>. مثل عروسک‌های تودرتو.</p>
+<div class="box ex"><b class="t">مثال</b>
+<span class="m">A = {2, 3}</span> و <span class="m">B = {1, 2, 3, 4}</span>. همهٔ عضوهای A در B هستند، پس <span class="m">A ⊆ B</span>.<br>
+اما <span class="m">{2, 7} ⊄ B</span> چون ۷ در B نیست.</div>
+<div class="box tip"><b class="t">دو حقیقت که همیشه درست‌اند</b>
+۱) مجموعهٔ تهی زیرمجموعهٔ <b>هر</b> مجموعه‌ای است: <span class="m">∅ ⊆ A</span><br>
+۲) هر مجموعه زیرمجموعهٔ <b>خودش</b> است: <span class="m">A ⊆ A</span></div>
+<div class="box bad"><b class="t">اشتباه رایج</b>
+<span class="m">∈</span> برای «عضو» است و <span class="m">⊆</span> برای «مجموعه». پس <span class="m">3 ∈ A</span> درست است ولی <span class="m">3 ⊆ A</span> غلط است، چون ۳ یک عدد است نه مجموعه. اگر آکولاد بگذاریم درست می‌شود: <span class="m">{3} ⊆ A</span>.</div>
+<h3>تعداد زیرمجموعه‌ها</h3>
+<p>اگر مجموعه <b>n عضو</b> داشته باشد، تعداد زیرمجموعه‌هایش برابر است با <span class="m">2ⁿ</span> (یعنی n تا عدد ۲ را در هم ضرب کن).</p>
+<table><tr><th>تعداد عضو</th><td>۰</td><td>۱</td><td>۲</td><td>۳</td><td>۴</td><td>۵</td></tr>
+<tr><th>تعداد زیرمجموعه</th><td>۱</td><td>۲</td><td>۴</td><td>۸</td><td>۱۶</td><td>۳۲</td></tr></table>
+<div class="cal">🎛️ خودت امتحان کن: تعداد عضوها را تغییر بده<br>
+<input type="range" id="rg" min="0" max="10" value="3">
+مجموعه‌ای با <big id="rn">۳</big> عضو، <big id="rv">۸</big> زیرمجموعه دارد.</div>
+</section>
+
+<section class="s3" id="a3">
+<h2><i>🔗</i>اجتماع، اشتراک و تفاضل</h2>
+<p>فرض کن <span class="m">A = {1, 2, 3, 4}</span> و <span class="m">B = {3, 4, 5, 6}</span>.</p>
+<div class="fig"><svg width="340" height="170" viewBox="0 0 340 170" style="direction:ltr;font-family:Vazirmatn,Tahoma">
+<circle cx="130" cy="85" r="70" fill="#ff7a5944" stroke="#ff7a59" stroke-width="2.5"/><circle cx="210" cy="85" r="70" fill="#2f80ed44" stroke="#2f80ed" stroke-width="2.5"/>
+<text x="40" y="22" font-weight="800">A</text><text x="296" y="22" font-weight="800">B</text>
+<text x="100" y="80" text-anchor="middle">1</text><text x="100" y="104" text-anchor="middle">2</text>
+<text x="170" y="80" text-anchor="middle" font-weight="800">3</text><text x="170" y="104" text-anchor="middle" font-weight="800">4</text>
+<text x="240" y="80" text-anchor="middle">5</text><text x="240" y="104" text-anchor="middle">6</text></svg></div>
+<table>
+<tr><th>نام</th><th>علامت</th><th>معنی ساده</th><th>جواب مثال</th></tr>
+<tr><td>اجتماع</td><td><span class="m">A ∪ B</span></td><td>همهٔ عضوها، هرکدام یک بار</td><td><span class="m">{1,2,3,4,5,6}</span></td></tr>
+<tr><td>اشتراک</td><td><span class="m">A ∩ B</span></td><td>فقط عضوهای مشترک</td><td><span class="m">{3,4}</span></td></tr>
+<tr><td>تفاضل</td><td><span class="m">A − B</span></td><td>عضوهای A که در B نیستند</td><td><span class="m">{1,2}</span></td></tr>
+<tr><td>تفاضل</td><td><span class="m">B − A</span></td><td>عضوهای B که در A نیستند</td><td><span class="m">{5,6}</span></td></tr>
+</table>
+<div class="box tip"><b class="t">برای یادگیری راحت‌تر</b>
+∪ شبیه <b>ظرف</b> است که همه‌چیز را جمع می‌کند (اجتماع). ∩ شبیه <b>پل</b> است و فقط چیزهای مشترک را از وسط عبور می‌دهد (اشتراک).</div>
+<div class="box bad"><b class="t">دقت کن</b>
+<span class="m">A − B</span> با <span class="m">B − A</span> معمولاً <b>برابر نیست</b> (جابه‌جا شدنشان جواب را عوض می‌کند). اگر دو مجموعه هیچ عضو مشترکی نداشته باشند، اشتراکشان <span class="m">∅</span> است.</div>
+<div class="box ex"><b class="t">از روی نمودار بخوان</b>
+اگر <span class="m">(A−B) ∪ (B−A)</span> را بخواهند، یعنی «همه به‌جز قسمت مشترک»: <span class="m">{1,2,5,6}</span>.</div>
+</section>
+
+<section class="s4" id="a4">
+<h2><i>🎲</i>احتمال</h2>
+<p>احتمال یعنی «شانس اتفاق افتادن یک پیشامد». عددی بین <b>۰ و ۱</b> است.</p>
+<div class="box def"><b class="t">فرمول اصلی</b>
+<span class="f"><span>تعداد حالت‌های مطلوب</span><span>تعداد کل حالت‌های ممکن</span></span> = احتمال</div>
+<ul>
+<li>احتمال ۰ یعنی <b>غیرممکن</b> (مثلاً تاس ۷ بیاید).</li>
+<li>احتمال ۱ یعنی <b>حتماً</b> اتفاق می‌افتد (مثلاً تاس کمتر از ۷ بیاید).</li>
+<li>کل حالت‌های یک سکه: ۲ (شیر، خط). یک تاس: ۶. یک سکه و یک تاس با هم: <span class="m">2×6 = 12</span>.</li>
+</ul>
+<h3>تاس: فهرست‌هایی که باید بدانی</h3>
+<table>
+<tr><th>زوج</th><td>۲، ۴، ۶</td></tr><tr><th>فرد</th><td>۱، ۳، ۵</td></tr>
+<tr><th>اول</th><td>۲، ۳، ۵ (۱ اول نیست!)</td></tr><tr><th>مرکّب</th><td>۴، ۶ (غیر از ۱ و اول‌ها)</td></tr>
+</table>
+<div class="box ex"><b class="t">مثال‌ها (یک تاس)</b>
+• زوج و بزرگ‌تر از ۱: {۲،۴،۶} پس <span class="f"><span>۳</span><span>۶</span></span> = <span class="f"><span>۱</span><span>۲</span></span><br>
+• مرکّب: {۴،۶} پس <span class="f"><span>۲</span><span>۶</span></span> = <span class="f"><span>۱</span><span>۳</span></span><br>
+• «زوج <b>یا</b> اول»: اجتماع می‌گیریم: {۲،۴،۶} ∪ {۲،۳،۵} = {۲،۳،۴،۵،۶}. هر عدد را یک بار می‌شماریم (۲ تکراری است!). پس <span class="f"><span>۵</span><span>۶</span></span></div>
+<div class="box tip"><b class="t">یادآوری</b>«یا» یعنی <b>اجتماع</b>، «و» یعنی <b>اشتراک</b>. جواب را همیشه ساده کن: ۳/۶ را به ۱/۲ تبدیل کن.</div>
+</section>
+
+<div class="part"><span>📘 فصل ۲ — عددهای حقیقی</span></div>
+
+<section class="s1" id="b1">
+<h2><i>🧬</i>خانوادهٔ عددها</h2>
+<div class="fig"><svg width="360" height="215" viewBox="0 0 360 215" style="direction:ltr;font-family:Vazirmatn,Tahoma;font-size:13px">
+<rect x="4" y="4" width="352" height="207" rx="22" fill="#fff6d9" stroke="#f2b01e" stroke-width="2"/><text x="180" y="22" text-anchor="middle" font-weight="800">R حقیقی</text>
+<rect x="14" y="32" width="200" height="170" rx="18" fill="#eaf2ff" stroke="#2f80ed" stroke-width="2"/><text x="114" y="50" text-anchor="middle" font-weight="800">Q گویا</text>
+<rect x="24" y="58" width="150" height="136" rx="16" fill="#eafaf0" stroke="#27ae60" stroke-width="2"/><text x="99" y="76" text-anchor="middle" font-weight="800">Z صحیح</text>
+<rect x="34" y="84" width="100" height="100" rx="14" fill="#f3e8ff" stroke="#9b51e0" stroke-width="2"/><text x="84" y="102" text-anchor="middle" font-weight="800">W حسابی</text>
+<rect x="44" y="110" width="70" height="66" rx="12" fill="#ffe9e4" stroke="#ff7a59" stroke-width="2"/><text x="79" y="128" text-anchor="middle" font-weight="800">N طبیعی</text><text x="79" y="150" text-anchor="middle">1, 2, 3 …</text>
+<text x="226" y="115" font-weight="800" fill="#c0392b">Q′ گنگ</text><text x="226" y="135">√2 ، √3 ، π</text><text x="226" y="170" font-size="11">Q′ بیرون Q است</text></svg></div>
+<table>
+<tr><th>مجموعه</th><th>نماد</th><th>عضوها</th></tr>
+<tr><td>طبیعی</td><td><span class="m">ℕ</span></td><td><span class="m">{1, 2, 3, …}</span></td></tr>
+<tr><td>حسابی</td><td><span class="m">W</span></td><td><span class="m">{0, 1, 2, 3, …} (طبیعی + صفر)</span></td></tr>
+<tr><td>صحیح</td><td><span class="m">ℤ</span></td><td><span class="m">{… , −2, −1, 0, 1, 2, …}</span></td></tr>
+<tr><td>گویا</td><td><span class="m">ℚ</span></td><td>هر عددی که بشود به‌شکل کسر نوشت</td></tr>
+<tr><td>گنگ</td><td><span class="m">ℚ′</span></td><td>عددهایی که کسر نمی‌شوند</td></tr>
+<tr><td>حقیقی</td><td><span class="m">ℝ</span></td><td>همهٔ گویاها و گنگ‌ها با هم</td></tr>
+</table>
+<div class="box ex"><b class="t">از روی شکل بخوان</b>
+<span class="m">ℕ ⊆ W ⊆ ℤ ⊆ ℚ ⊆ ℝ</span><br>
+<span class="m">ℚ′ ∪ ℚ = ℝ</span> &nbsp;|&nbsp; <span class="m">ℤ ∪ ℝ = ℝ</span> &nbsp;|&nbsp; <span class="m">ℕ ∩ ℚ = ℕ</span> &nbsp;|&nbsp; <span class="m">ℚ′ ∩ ℤ = ∅</span><br>
+قانون ساده: وقتی یک مجموعه داخل دیگری است، اجتماعشان همان بزرگ‌تر و اشتراکشان همان کوچک‌تر است.</div>
+</section>
+
+<section class="s2" id="b2">
+<h2><i>⚖️</i>عدد گویا و عدد گنگ</h2>
+<div class="box def"><b class="t">گویا</b>
+عددی که بشود آن را <span class="f"><span>صحیح</span><span>صحیح (مخرج ≠ ۰)</span></span> نوشت. مثل <span class="m">0.5 = 1/2</span> و <span class="m">3 = 3/1</span> و <span class="m">0.333… = 1/3</span> و <span class="m">−4/7</span>.</div>
+<div class="box def"><b class="t">گنگ</b>
+عددی که کسر نمی‌شود. اعشارش <b>نه تمام می‌شود نه تکرار می‌شود</b>: <span class="m"><span class="rd">√<i>2</i></span> = 1.41421356…</span> و <span class="m">π = 3.14159…</span></div>
+<table>
+<tr><th>اعشار</th><th>نوع</th></tr>
+<tr><td><span class="m">0.25</span></td><td>گویا (تمام می‌شود)</td></tr>
+<tr><td><span class="m">0.666…</span></td><td>گویا (تکرار می‌شود)</td></tr>
+<tr><td><span class="m">1.2345678…</span></td><td>گنگ (نه تمام، نه تکرار)</td></tr>
+</table>
+<div class="box tip"><b class="t">ترفند</b>
+عدد صحیح، گویا هم هست (۵ = ۵/۱). و جذر یک عدد که <b>مربع کامل نیست</b>، گنگ است: <span class="m"><span class="rd">√<i>15</i></span></span> گنگ، ولی <span class="m"><span class="rd">√<i>16</i></span> = 4</span> گویا.</div>
+</section>
+
+<section class="s3" id="b3">
+<h2><i>√</i>رادیکال</h2>
+<p><span class="m"><span class="rd">√<i>a</i></span></span> یعنی «عددی نامنفی که اگر به توان ۲ برسد a شود». مثلاً <span class="m"><span class="rd">√<i>9</i></span> = 3</span> چون ۳×۳=۹. زیر رادیکال عدد منفی نمی‌آید.</p>
+<p>این مربع‌های کامل را حفظ کن:</p>
+<table><tr><td>۱</td><td>۴</td><td>۹</td><td>۱۶</td><td>۲۵</td><td>۳۶</td><td>۴۹</td><td>۶۴</td><td>۸۱</td><td>۱۰۰</td><td>۱۲۱</td><td>۱۴۴</td></tr>
+<tr><td>۱²</td><td>۲²</td><td>۳²</td><td>۴²</td><td>۵²</td><td>۶²</td><td>۷²</td><td>۸²</td><td>۹²</td><td>۱۰²</td><td>۱۱²</td><td>۱۲²</td></tr></table>
+<h3>تخمین جذر</h3>
+<div class="box ex"><b class="t">مثال: <span class="m"><span class="rd">√<i>۱۰</i></span></span> کجاست؟</b>
+۱۰ بین ۹ و ۱۶ است، پس <span class="m"><span class="rd">√<i>۱۰</i></span></span> بین <span class="m"><span class="rd">√<i>۹</i></span>=۳</span> و <span class="m"><span class="rd">√<i>۱۶</i></span>=۴</span> است. تقریباً <span class="m">3.16</span>.<div class="fig"><svg width="340" height="80" viewBox="0 0 340 80" style="direction:ltr;font-family:Vazirmatn,Tahoma"><line x1="8" y1="52" x2="332" y2="52" stroke="#000" stroke-width="1.4"/><path d="M332,52 l-9,-4.5 v9 z M8,52 l9,-4.5 v9 z"/><line x1="22.0" y1="47" x2="22.0" y2="57" stroke="#000"/><text x="22.0" y="74" text-anchor="middle" font-size="12">۲</text><line x1="120.7" y1="47" x2="120.7" y2="57" stroke="#000"/><text x="120.7" y="74" text-anchor="middle" font-size="12">۳</text><line x1="219.3" y1="47" x2="219.3" y2="57" stroke="#000"/><text x="219.3" y="74" text-anchor="middle" font-size="12">۴</text><line x1="318.0" y1="47" x2="318.0" y2="57" stroke="#000"/><text x="318.0" y="74" text-anchor="middle" font-size="12">۵</text><circle cx="120.7" cy="52" r="5.5" fill="#2f80ed" stroke="#2f80ed" stroke-width="2.2"/><text x="120.7" y="40" text-anchor="middle" font-size="13" font-weight="700" fill="#2f80ed">√۹ = ۳</text><circle cx="136.7" cy="52" r="5.5" fill="#ff7a59" stroke="#ff7a59" stroke-width="2.2"/><text x="136.7" y="25" text-anchor="middle" font-size="13" font-weight="700" fill="#ff7a59">√۱۰</text><circle cx="219.3" cy="52" r="5.5" fill="#2f80ed" stroke="#2f80ed" stroke-width="2.2"/><text x="219.3" y="40" text-anchor="middle" font-size="13" font-weight="700" fill="#2f80ed">√۱۶ = ۴</text></svg><div class="cap">√۱۰ بین ۳ و ۴ است، کمی بعد از ۳.</div></div></div>
+<h3>قانون‌ها</h3>
+<ul>
+<li><span class="m"><span class="rd">√<i>a</i></span> × <span class="rd">√<i>b</i></span> = <span class="rd">√<i>a×b</i></span></span> ← مثال: <span class="m"><span class="rd">√<i>2</i></span> × <span class="rd">√<i>3</i></span> = <span class="rd">√<i>6</i></span></span></li>
+<li><span class="m"><span class="rd">√<i>a²</i></span> = |a|</span> (مربع و جذر همدیگر را خنثی می‌کنند، ولی جواب مثبت می‌شود)</li>
+<li><span class="m">3<span class="rd">√<i>5</i></span></span> یعنی <b>۳ ضرب در <span class="m"><span class="rd">√<i>۵</i></span></span></b>. جمع فقط بین رادیکال‌های هم‌نوع: <span class="m">2<span class="rd">√<i>5</i></span> + 3<span class="rd">√<i>5</i></span> = 5<span class="rd">√<i>5</i></span></span></li>
+<li><span class="m"><span class="rd">√<i>2</i></span> + <span class="rd">√<i>3</i></span></span> را نمی‌شود با هم یکی کرد و برابر <span class="m"><span class="rd">√<i>۵</i></span></span> نیست!</li>
+</ul>
+</section>
+
+<section class="s4" id="b4">
+<h2><i>📏</i>محور و بازه</h2>
+<p>هر عدد حقیقی یک جای مشخص روی محور دارد. بزرگ‌تر به سمت راست است.</p>
+<h3>دایره روی محور چه می‌گوید؟</h3>
+<div class="box def">
+<b>◯ توخالی</b> یعنی خود عدد <b>نیست</b> (علامت &lt; یا &gt;).<br>
+<b>● توپر</b> یعنی خود عدد <b>هست</b> (علامت ≤ یا ≥).</div>
+<div class="fig"><svg width="360" height="110" viewBox="0 0 360 110" style="direction:ltr;font-family:Vazirmatn,Tahoma">
+<line x1="14" y1="30" x2="346" y2="30" stroke="#000" stroke-width="1.4"/><path d="M346,30 l-9,-4.5 v9 z M14,30 l9,-4.5 v9 z"/>
+<g font-size="12" text-anchor="middle"><text x="60" y="52">−2</text><text x="120" y="52">−1</text><text x="180" y="52">0</text><text x="240" y="52">1</text><text x="300" y="52">2</text></g>
+<line x1="60" y1="30" x2="300" y2="30" stroke="#2f80ed" stroke-width="5"/>
+<circle cx="60" cy="30" r="6" fill="#fff" stroke="#2f80ed" stroke-width="2.5"/><circle cx="300" cy="30" r="6" fill="#2f80ed"/>
+<text x="180" y="84" text-anchor="middle" font-size="15">{ x ∈ ℝ | −2 &lt; x ≤ 2 }</text><text x="180" y="102" text-anchor="middle" font-size="12" fill="#666">دایرهٔ توخالی یعنی «نیست»، توپر یعنی «هست»</text></svg></div>
+<table>
+<tr><th>ماجرا</th><th>روی محور</th></tr>
+<tr><td><span class="m">x &lt; 2</span></td><td>از ۲ به سمت چپ، دایرهٔ توخالی روی ۲</td></tr>
+<tr><td><span class="m">x ≥ −1</span></td><td>از ۱- به سمت راست، دایرهٔ توپر روی ۱-</td></tr>
+<tr><td><span class="m">−3 ≤ x &lt; −1</span></td><td>بین ۳- (توپر) و ۱- (توخالی)</td></tr>
+</table>
+<div class="box tip"><b class="t">روش مطمئن</b>
+اول ببین نقطهٔ ابتدا و انتها کجاست. بعد برای هر نقطه از خودت بپرس «آیا خودش جزو مجموعه است؟» اگر بله توپر، اگر نه توخالی.</div>
+</section>
+
+<section class="s5" id="b5">
+<h2><i>↔️</i>قدرمطلق</h2>
+<div class="box def"><b class="t">معنی</b>
+<span class="m">|a|</span> یعنی <b>فاصلهٔ a تا صفر</b> روی محور. فاصله هیچ‌وقت منفی نیست!<br>
+<span class="m">|5| = 5</span> ، <span class="m">|−5| = 5</span> ، <span class="m">|0| = 0</span></div><div class="fig"><svg width="340" height="80" viewBox="0 0 340 80" style="direction:ltr;font-family:Vazirmatn,Tahoma"><line x1="8" y1="52" x2="332" y2="52" stroke="#000" stroke-width="1.4"/><path d="M332,52 l-9,-4.5 v9 z M8,52 l9,-4.5 v9 z"/><line x1="22.0" y1="47" x2="22.0" y2="57" stroke="#000"/><text x="22.0" y="74" text-anchor="middle" font-size="12">−۶</text><line x1="46.7" y1="47" x2="46.7" y2="57" stroke="#000"/><text x="46.7" y="74" text-anchor="middle" font-size="12">−۵</text><line x1="71.3" y1="47" x2="71.3" y2="57" stroke="#000"/><text x="71.3" y="74" text-anchor="middle" font-size="12">−۴</text><line x1="96.0" y1="47" x2="96.0" y2="57" stroke="#000"/><text x="96.0" y="74" text-anchor="middle" font-size="12">−۳</text><line x1="120.7" y1="47" x2="120.7" y2="57" stroke="#000"/><text x="120.7" y="74" text-anchor="middle" font-size="12">−۲</text><line x1="145.3" y1="47" x2="145.3" y2="57" stroke="#000"/><text x="145.3" y="74" text-anchor="middle" font-size="12">−۱</text><line x1="170.0" y1="47" x2="170.0" y2="57" stroke="#000"/><text x="170.0" y="74" text-anchor="middle" font-size="12">۰</text><line x1="194.7" y1="47" x2="194.7" y2="57" stroke="#000"/><text x="194.7" y="74" text-anchor="middle" font-size="12">۱</text><line x1="219.3" y1="47" x2="219.3" y2="57" stroke="#000"/><text x="219.3" y="74" text-anchor="middle" font-size="12">۲</text><line x1="244.0" y1="47" x2="244.0" y2="57" stroke="#000"/><text x="244.0" y="74" text-anchor="middle" font-size="12">۳</text><line x1="268.7" y1="47" x2="268.7" y2="57" stroke="#000"/><text x="268.7" y="74" text-anchor="middle" font-size="12">۴</text><line x1="293.3" y1="47" x2="293.3" y2="57" stroke="#000"/><text x="293.3" y="74" text-anchor="middle" font-size="12">۵</text><line x1="318.0" y1="47" x2="318.0" y2="57" stroke="#000"/><text x="318.0" y="74" text-anchor="middle" font-size="12">۶</text><line x1="46.7" y1="52" x2="170.0" y2="52" stroke="#ff7a59" stroke-width="5" opacity=".75"/><line x1="170.0" y1="52" x2="293.3" y2="52" stroke="#2f80ed" stroke-width="5" opacity=".75"/><circle cx="46.7" cy="52" r="5.5" fill="#2f80ed" stroke="#2f80ed" stroke-width="2.2"/><text x="46.7" y="40" text-anchor="middle" font-size="13" font-weight="700" fill="#2f80ed">−۵</text><circle cx="170.0" cy="52" r="5.5" fill="#2f80ed" stroke="#2f80ed" stroke-width="2.2"/><text x="170.0" y="40" text-anchor="middle" font-size="13" font-weight="700" fill="#2f80ed">۰</text><circle cx="293.3" cy="52" r="5.5" fill="#2f80ed" stroke="#2f80ed" stroke-width="2.2"/><text x="293.3" y="40" text-anchor="middle" font-size="13" font-weight="700" fill="#2f80ed">۵</text></svg><div class="cap">فاصلهٔ هر دو عدد تا صفر ۵ است. پس |−۵| = |۵| = ۵</div></div>
+<div class="box def"><b class="t">قانون بدون قدرمطلق نوشتن</b>
+اگر داخل قدرمطلق <b>مثبت یا صفر</b> بود: همان را بنویس.<br>
+اگر داخل قدرمطلق <b>منفی</b> بود: همه را قرینه کن (منفی کن).</div>
+<div class="box ex"><b class="t">مثال ۱: اگر a &lt; 0</b>
+|a| منفیِ a است، یعنی <span class="m">|a| = −a</span>. پس <span class="m">|a| + a = −a + a = 0</span>.<div class="fig"><svg width="340" height="80" viewBox="0 0 340 80" style="direction:ltr;font-family:Vazirmatn,Tahoma"><line x1="8" y1="52" x2="332" y2="52" stroke="#000" stroke-width="1.4"/><path d="M332,52 l-9,-4.5 v9 z M8,52 l9,-4.5 v9 z"/><line x1="22.0" y1="47" x2="22.0" y2="57" stroke="#000"/><text x="22.0" y="74" text-anchor="middle" font-size="12">−۴</text><line x1="59.0" y1="47" x2="59.0" y2="57" stroke="#000"/><text x="59.0" y="74" text-anchor="middle" font-size="12">−۳</text><line x1="96.0" y1="47" x2="96.0" y2="57" stroke="#000"/><text x="96.0" y="74" text-anchor="middle" font-size="12">−۲</text><line x1="133.0" y1="47" x2="133.0" y2="57" stroke="#000"/><text x="133.0" y="74" text-anchor="middle" font-size="12">−۱</text><line x1="170.0" y1="47" x2="170.0" y2="57" stroke="#000"/><text x="170.0" y="74" text-anchor="middle" font-size="12">۰</text><line x1="207.0" y1="47" x2="207.0" y2="57" stroke="#000"/><text x="207.0" y="74" text-anchor="middle" font-size="12">۱</text><line x1="244.0" y1="47" x2="244.0" y2="57" stroke="#000"/><text x="244.0" y="74" text-anchor="middle" font-size="12">۲</text><line x1="281.0" y1="47" x2="281.0" y2="57" stroke="#000"/><text x="281.0" y="74" text-anchor="middle" font-size="12">۳</text><line x1="318.0" y1="47" x2="318.0" y2="57" stroke="#000"/><text x="318.0" y="74" text-anchor="middle" font-size="12">۴</text><line x1="59.0" y1="52" x2="170.0" y2="52" stroke="#ff7a59" stroke-width="5" opacity=".75"/><circle cx="59.0" cy="52" r="5.5" fill="#2f80ed" stroke="#2f80ed" stroke-width="2.2"/><text x="59.0" y="40" text-anchor="middle" font-size="13" font-weight="700" fill="#2f80ed">a</text><circle cx="170.0" cy="52" r="5.5" fill="#2f80ed" stroke="#2f80ed" stroke-width="2.2"/><circle cx="281.0" cy="52" r="5.5" fill="#ff7a59" stroke="#ff7a59" stroke-width="2.2"/><text x="281.0" y="40" text-anchor="middle" font-size="13" font-weight="700" fill="#ff7a59">−a</text></svg><div class="cap">مثلاً a = −۳: فاصلهٔ a تا صفر ۳ است و −a هم ۳ است. پس |a| = −a</div></div></div>
+<div class="box ex"><b class="t">مثال ۲: <span class="m">|4<span class="rd">√<i>6</i></span> − 4|</span></b>
+قدم ۱: علامت داخل را پیدا کن. <span class="m"><span class="rd">√<i>۶</i></span></span> حدود ۲٫۴۵ است، پس <span class="m">۴<span class="rd">√<i>۶</i></span></span> حدود ۹٫۸ و از ۴ بزرگ‌تر است. داخل مثبت است.<br>
+قدم ۲: همان را بنویس: <span class="m">4<span class="rd">√<i>6</i></span> − 4</span>.</div>
+<div class="box ex"><b class="t">مثال ۳: <span class="m">|<span class="rd">√<i>10</i></span> − <span class="rd">√<i>14</i></span>|</span></b>
+<span class="m"><span class="rd">√<i>۱۰</i></span></span> از <span class="m"><span class="rd">√<i>۱۴</i></span></span> کوچک‌تر است، پس داخل <b>منفی</b> است. قرینه می‌کنیم: <span class="m"><span class="rd">√<i>14</i></span> − <span class="rd">√<i>10</i></span></span>.<div class="fig"><svg width="340" height="80" viewBox="0 0 340 80" style="direction:ltr;font-family:Vazirmatn,Tahoma"><line x1="8" y1="52" x2="332" y2="52" stroke="#000" stroke-width="1.4"/><path d="M332,52 l-9,-4.5 v9 z M8,52 l9,-4.5 v9 z"/><line x1="22.0" y1="47" x2="22.0" y2="57" stroke="#000"/><text x="22.0" y="74" text-anchor="middle" font-size="12">۳</text><line x1="318.0" y1="47" x2="318.0" y2="57" stroke="#000"/><text x="318.0" y="74" text-anchor="middle" font-size="12">۴</text><circle cx="70.0" cy="52" r="5.5" fill="#2f80ed" stroke="#2f80ed" stroke-width="2.2"/><text x="70.0" y="40" text-anchor="middle" font-size="13" font-weight="700" fill="#2f80ed">√۱۰</text><circle cx="241.6" cy="52" r="5.5" fill="#2f80ed" stroke="#2f80ed" stroke-width="2.2"/><text x="241.6" y="40" text-anchor="middle" font-size="13" font-weight="700" fill="#2f80ed">√۱۴</text></svg><div class="cap">√۱۰ سمت چپ است، یعنی کوچک‌تر است. پس √۱۰ − √۱۴ منفی می‌شود.</div></div></div>
+<div class="box ex"><b class="t">مثال ۴: <span class="m"><span class="rd">√<i>(3 − <span class="rd">√<i>2</i></span>)²</i></span></span></b>
+جذر و توان ۲ برابر است با قدرمطلق: <span class="m">|3 − <span class="rd">√<i>2</i></span>|</span>. چون ۳ از ۱٫۴ بزرگ‌تر است، داخل مثبت است. جواب: <span class="m">3 − <span class="rd">√<i>2</i></span></span>.<br>
+مشابه: <span class="m"><span class="rd">√<i>(2 − <span class="rd">√<i>11</i></span>)²</i></span> = |2 − <span class="rd">√<i>11</i></span>| = <span class="rd">√<i>11</i></span> − 2</span> (چون <span class="m"><span class="rd">√<i>۱۱</i></span></span> حدود ۳٫۳ و از ۲ بزرگ‌تر است).<div class="fig"><svg width="340" height="80" viewBox="0 0 340 80" style="direction:ltr;font-family:Vazirmatn,Tahoma"><line x1="8" y1="52" x2="332" y2="52" stroke="#000" stroke-width="1.4"/><path d="M332,52 l-9,-4.5 v9 z M8,52 l9,-4.5 v9 z"/><line x1="22.0" y1="47" x2="22.0" y2="57" stroke="#000"/><text x="22.0" y="74" text-anchor="middle" font-size="12">۰</text><line x1="96.0" y1="47" x2="96.0" y2="57" stroke="#000"/><text x="96.0" y="74" text-anchor="middle" font-size="12">۱</text><line x1="170.0" y1="47" x2="170.0" y2="57" stroke="#000"/><text x="170.0" y="74" text-anchor="middle" font-size="12">۲</text><line x1="244.0" y1="47" x2="244.0" y2="57" stroke="#000"/><text x="244.0" y="74" text-anchor="middle" font-size="12">۳</text><line x1="318.0" y1="47" x2="318.0" y2="57" stroke="#000"/><text x="318.0" y="74" text-anchor="middle" font-size="12">۴</text><line x1="126.6" y1="52" x2="244.0" y2="52" stroke="#27ae60" stroke-width="5" opacity=".75"/><circle cx="126.6" cy="52" r="5.5" fill="#2f80ed" stroke="#2f80ed" stroke-width="2.2"/><text x="126.6" y="40" text-anchor="middle" font-size="13" font-weight="700" fill="#2f80ed">√۲</text><circle cx="244.0" cy="52" r="5.5" fill="#ff7a59" stroke="#ff7a59" stroke-width="2.2"/><text x="244.0" y="40" text-anchor="middle" font-size="13" font-weight="700" fill="#ff7a59">۳</text></svg><div class="cap">۳ سمت راستِ √۲ است. پس ۳ − √۲ مثبت است.</div></div></div>
+<div class="box bad"><b class="t">اشتباه رایج</b>
+<span class="m"><span class="rd">√<i>a²</i></span> = a</span> همیشه درست نیست. اگر a منفی باشد جواب <span class="m">−a</span> است. همیشه درست: <span class="m"><span class="rd">√<i>a²</i></span> = |a|</span>.</div>
+</section>
+
+<section class="s1" id="b6">
+<h2><i>🔍</i>پیدا کردن عدد بین دو عدد</h2>
+<p>بین هر دو عدد حقیقی، بی‌نهایت عدد گویا و بی‌نهایت عدد گنگ وجود دارد.</p>
+<div class="box ex"><b class="t">سه عدد گنگ بین <span class="m"><span class="rd">√<i>۷</i></span></span> و <span class="m"><span class="rd">√<i>۱۲</i></span></span></b>
+عددهای زیر رادیکال را ببین: بین ۷ و ۱۲ هستند: ۸، ۹، ۱۰، ۱۱. ولی ۹ مربع کامل است (<span class="m"><span class="rd">√<i>۹</i></span>=۳</span> گویاست) پس حذفش کن.<br>
+جواب: <span class="m"><span class="rd">√<i>8</i></span> ، <span class="rd">√<i>10</i></span> ، <span class="rd">√<i>11</i></span></span><div class="fig"><svg width="340" height="80" viewBox="0 0 340 80" style="direction:ltr;font-family:Vazirmatn,Tahoma"><line x1="8" y1="52" x2="332" y2="52" stroke="#000" stroke-width="1.4"/><path d="M332,52 l-9,-4.5 v9 z M8,52 l9,-4.5 v9 z"/><line x1="22.0" y1="47" x2="22.0" y2="57" stroke="#000"/><text x="22.0" y="74" text-anchor="middle" font-size="12">۲</text><line x1="170.0" y1="47" x2="170.0" y2="57" stroke="#000"/><text x="170.0" y="74" text-anchor="middle" font-size="12">۳</text><line x1="318.0" y1="47" x2="318.0" y2="57" stroke="#000"/><text x="318.0" y="74" text-anchor="middle" font-size="12">۴</text><circle cx="117.6" cy="52" r="5.5" fill="#fff" stroke="#e0432c" stroke-width="2.2"/><text x="117.6" y="40" text-anchor="middle" font-size="13" font-weight="700" fill="#e0432c">√۷</text><circle cx="144.5" cy="52" r="5.5" fill="#2f80ed" stroke="#2f80ed" stroke-width="2.2"/><text x="144.5" y="25" text-anchor="middle" font-size="13" font-weight="700" fill="#2f80ed">√۸</text><circle cx="194.0" cy="52" r="5.5" fill="#2f80ed" stroke="#2f80ed" stroke-width="2.2"/><text x="194.0" y="40" text-anchor="middle" font-size="13" font-weight="700" fill="#2f80ed">√۱۰</text><circle cx="216.9" cy="52" r="5.5" fill="#2f80ed" stroke="#2f80ed" stroke-width="2.2"/><text x="216.9" y="25" text-anchor="middle" font-size="13" font-weight="700" fill="#2f80ed">√۱۱</text><circle cx="238.7" cy="52" r="5.5" fill="#fff" stroke="#e0432c" stroke-width="2.2"/><text x="238.7" y="40" text-anchor="middle" font-size="13" font-weight="700" fill="#e0432c">√۱۲</text></svg><div class="cap">دو سر (قرمز) جزو جواب نیستند. √۹ = ۳ گویاست و کنار گذاشته شد.</div></div></div>
+<div class="box ex"><b class="t">سه کسر بین ۱/۴ و ۷/۸</b>
+قدم ۱: به اعشار تبدیل کن: ۰٫۲۵ و ۰٫۸۷۵.<br>
+قدم ۲: هر کسری که بین این‌ها باشد درست است: <span class="m">1/3 ≈ 0.33</span> ، <span class="m">1/2 = 0.5</span> ، <span class="m">3/4 = 0.75</span><div class="fig"><svg width="340" height="80" viewBox="0 0 340 80" style="direction:ltr;font-family:Vazirmatn,Tahoma"><line x1="8" y1="52" x2="332" y2="52" stroke="#000" stroke-width="1.4"/><path d="M332,52 l-9,-4.5 v9 z M8,52 l9,-4.5 v9 z"/><line x1="22.0" y1="47" x2="22.0" y2="57" stroke="#000"/><text x="22.0" y="74" text-anchor="middle" font-size="12">۰</text><line x1="318.0" y1="47" x2="318.0" y2="57" stroke="#000"/><text x="318.0" y="74" text-anchor="middle" font-size="12">۱</text><circle cx="96.0" cy="52" r="5.5" fill="#fff" stroke="#e0432c" stroke-width="2.2"/><text x="96.0" y="40" text-anchor="middle" font-size="13" font-weight="700" fill="#e0432c">۱/۴</text><circle cx="120.7" cy="52" r="5.5" fill="#2f80ed" stroke="#2f80ed" stroke-width="2.2"/><text x="120.7" y="25" text-anchor="middle" font-size="13" font-weight="700" fill="#2f80ed">۱/۳</text><circle cx="170.0" cy="52" r="5.5" fill="#2f80ed" stroke="#2f80ed" stroke-width="2.2"/><text x="170.0" y="40" text-anchor="middle" font-size="13" font-weight="700" fill="#2f80ed">۱/۲</text><circle cx="244.0" cy="52" r="5.5" fill="#2f80ed" stroke="#2f80ed" stroke-width="2.2"/><text x="244.0" y="40" text-anchor="middle" font-size="13" font-weight="700" fill="#2f80ed">۳/۴</text><circle cx="281.0" cy="52" r="5.5" fill="#fff" stroke="#e0432c" stroke-width="2.2"/><text x="281.0" y="25" text-anchor="middle" font-size="13" font-weight="700" fill="#e0432c">۷/۸</text></svg><div class="cap">سه کسر آبی بین دو سرِ قرمز هستند.</div></div></div>
+<div class="box tip"><b class="t">دقت</b>
+«بین» یعنی خود دو سر <b>نباید</b> جواب باشند. پس ۱/۴ و ۷/۸ قابل قبول نیستند.</div>
+</section>
+
+<div class="part" id="q"><span>✏️ تمرین کوتاه (جواب را با کلیک ببین)</span></div>
+<section class="s4">
+<details><summary>۱) مجموعهٔ A دارای ۴ عضو است. چند زیرمجموعه دارد؟</summary>۲×۲×۲×۲ = ۱۶</details>
+<details><summary>۲) <span class="m">A = {1,2,3}</span> و <span class="m">B = {3,4}</span>. A ∪ B و A ∩ B و A − B را بنویس.</summary>
+<span class="m">{1,2,3,4}</span> ، <span class="m">{3}</span> ، <span class="m">{1,2}</span></details>
+<details><summary>۳) احتمال آمدن عدد اول در پرتاب یک تاس چقدر است؟</summary>اول‌ها: ۲،۳،۵ پس ۳ از ۶ می‌شود <span class="f"><span>۱</span><span>۲</span></span></details>
+<details><summary>۴) درست یا نادرست: <span class="m">∅ ⊆ {1,2}</span> و <span class="m">3 ⊆ {3,4}</span></summary>اولی درست، دومی نادرست (باید {3} نوشته شود).</details>
+<details><summary>۵) <span class="m"><span class="rd">√<i>20</i></span></span> بین کدام دو عدد صحیح است؟ گویاست یا گنگ؟</summary>بین ۴ و ۵ (چون ۱۶&lt;۲۰&lt;۲۵). مربع کامل نیست، پس گنگ.</details>
+<details><summary>۶) بدون قدرمطلق بنویس: <span class="m">|3 − <span class="rd">√<i>10</i></span>|</span></summary><span class="m"><span class="rd">√<i>۱۰</i></span></span> حدود ۳٫۱۶ و از ۳ بزرگ‌تر است. داخل منفی است. جواب: <span class="m"><span class="rd">√<i>10</i></span> − 3</span></details>
+<details><summary>۷) مجموعهٔ <span class="m">x ≥ 1</span> را روی محور چطور نشان می‌دهیم؟</summary>دایرهٔ توپر روی ۱ و خط به سمت راست.</details>
+</section>
+</main>
+<footer>موفق باشی! 🌟 اگر اشتباه کردی ناراحت نشو؛ ریاضی با تمرین یاد گرفته می‌شود.</footer>
+<script>
+const fa=n=>String(n).replace(/[0-9]/g,d=>'۰۱۲۳۴۵۶۷۸۹'[d]),g=id=>document.getElementById(id);
+g('rg').oninput=e=>{const n=+e.target.value;g('rn').textContent=fa(n);g('rv').textContent=fa(2**n)};
+</script>
+</body>
+</html>
